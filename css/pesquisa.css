@@ -1,0 +1,115 @@
+/* Estilos para a página de pesquisa */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    padding: 0;
+    background-image: url(../img/1248167.jpg);
+    background-size: cover;
+    display: flexbox;
+    
+    
+}
+
+.navbar {
+    background-color: #271b06;
+    color: #ffffff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    font-family: 'Times New Roman', Times, serif;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.navbar li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-right: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.navbar a {
+    font-family: 'Times New Roman', Times, serif;
+    color: #eadab7;
+    text-decoration: none;
+}
+
+#searchInput {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 7px;
+    margin-right: 0px;
+    width: 300px;
+}
+
+#searchButton {
+    
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 12px;
+    background-color: #362318;
+    color: #41300b;
+    border: none;
+    border-radius: 70px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #362318a3;
+    box-shadow: #000;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 64, 0, 0.283);
+}
+
+.personagem-info {
+    margin-bottom: 20px;
+}
+
+.personagem-info p {
+    margin: 5px 0;
+}
+
+#resultado {
+    font-size: 25px;
+    font-style:oblique;
+    max-height: 400px; /* Altura máxima para exibir a lista */
+    overflow-y: auto; /* Habilita a rolagem vertical */
+    list-style: none;
+    cursor:pointer;
+    color: #fff8ea;
+}
+
+
+#lista-personagens {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista-personagens li {
+    list-style-type: none;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.div container{
+    background: #362318;
+    color: #271b06;
+}
+.select #select{
+ font-size: 1000px;
+}

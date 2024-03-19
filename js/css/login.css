@@ -1,0 +1,141 @@
+/* CSS padrão para o corpo */
+body {
+    background-image: url(../img/1193090.jpg); /* Imagem de fundo para o modo claro */
+    color: #EADAB7; /* Cor do texto */
+    background-size: cover;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif; /* Fonte padrão */
+    margin-top: 225px;
+    margin-right: 0px auto;
+    margin-left: 50px;
+    background-repeat: no-repeat;
+
+}
+
+/* CSS para o modo escuro */
+.darkModeToggle body {
+    background-image: url(../img/Sauron\ by\ eduardoleon.jpeg); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    padding: 100px;
+    height: 0 auto;
+    width:  0 auto;
+    margin: 0 auto;
+}
+
+/* CSS para o contêiner do formulário */
+.form-container {
+    font-size: 20px;
+    margin: 0 ;
+    align-items: center;
+    width: 350px; /* Largura do contêiner do formulário */
+    padding: 25px; /* Espaçamento interno */
+    background-color: #140D09; /* Cor de fundo do contêiner */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Botão de Modo Escuro */
+#darkModeToggle {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    background-color: #EADAB7; /* Cor de fundo do botão no modo escuro */
+    color: #140D09; /* Cor do texto do botão no modo escuro */
+    padding: 5px 50px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor apontando */
+    margin-top: 10px;
+    margin-left: 75px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+/* Altera o estilo do botão quando passa o mouse por cima */
+#darkModeToggle:hover {
+    color: #EADAB7;
+    background-color: #362318; /* Cor de fundo do botão ao passar o mouse no modo escuro */
+}
+
+/* Botão de Modo Claro */
+#lightModeToggle {
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    background-color: #362318; /* Cor de fundo do botão no modo claro */
+    color: #EADAB7; /* Cor do texto do botão no modo claro */
+    padding: 5px 50px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor apontando */
+    margin-top: 10px;
+    margin-left: 75px;
+    animation-name: initial ;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para a mudança de cor */
+} /* Transição suave para a mudança de cor */
+
+
+/* Altera o estilo do botão quando passa o mouse por cima */
+#lightModeToggle:hover {
+    color: #140D09;
+    background-color: #EADAB7; /* Cor de fundo do botão ao passar o mouse no modo claro */
+}
+/* CSS para o modo claro */
+
+/* CSS para o modo escuro */
+.dark-mode body {
+    background-image: url(../img/Sauron\ by\ eduardoleon.jpeg); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+}
+
+/* CSS para o contêiner do formulário */
+
+/* Outras regras de estilo podem ser adicionadas conforme necessário */
+.form-group {
+    margin-bottom: 25px; /* Espaçamento entre grupos */
+}
+
+.form-group:last-child {
+    margin-bottom: 0; /* Remove o espaçamento inferior do último grupo */
+}
+
+.form-group label {
+    display: block; /* Faz com que o rótulo ocupe toda a largura */
+    margin-bottom: 5px; /* Espaçamento inferior */
+}
+
+.form-group input {
+    border-color: #362318;
+    width: 95%; /* Ocupa toda a largura disponível */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #444444; /* Cor de fundo do campo */
+    color: #ffffff; /* Cor do texto */
+}
+
+.form-group input:focus {
+    outline: none; /* Remove o contorno ao focar */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Adiciona sombra ao focar */
+}
+
+.btn{
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #EADAB7; /* Cor de fundo do botão */
+    color: #140D09; /* Cor do texto */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+}
+
+.btn:hover {
+    border-color: #362318;
+    background-color: #362318;
+    color: #EADAB7; /* Cor de fundo ao passar por cima */
+}
+.footer{
+    display: flex;
+    
+}
+

@@ -1,0 +1,118 @@
+body{
+
+    margin: 0;
+    padding: 0px;
+    font-family:'Times New Roman', Times, serif
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #0C0905;
+    border: radius 10px, #EADAB7;
+    color: #EADAB7;
+    padding: 5px;
+    margin: right 0; 
+   
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flexbox;
+    
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:#EADAB7;
+    transition: color 0.3s  ease-in-out;
+
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.main-content {
+    position: relative;
+    background-size: cover;
+    background-position:0px;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color:#EADAB7;
+}
+
+.content p {
+    font-size: 1.2em;
+    padding: 12px;
+}
+.main img{
+    background: url(../img/1193090.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0;
+    width: 100px;
+    
+
+
+}
+.button{
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #30221c; /* Cor de fundo do botão */
+    color: #EADAB7; /* Cor do texto */
+    cursor:pointer; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration-color: #0a0700;
+
+}
+.footer{
+    padding: 32px;
+    background-color: #30221C;
+    height: 0px;
+    align-items: center;
+    color: #EADAB7;
+    align-items: center;
+    font-size: 15px;
+}
+
+
+
+   

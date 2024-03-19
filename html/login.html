@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+    <link rel="stylesheet" href="../css/login.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email">
+            <span id="emailError" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label for="username">Nome de usuário:</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário">
+            <span id="usernameError" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha">
+            <span id="passwordError" class="error"></span>
+        </div>
+        <button type="button" id="loginButton" class="btn">Entrar</button> <!-- Botão para enviar o formulário -->
+    </form>
+    <button id="darkModeToggle" class="btn-dark">Modo Escuro</button> <!-- Botão para alternar o modo escuro -->
+    <button id="lightModeToggle" class="btn-light">Modo Claro</button> <!-- Botão para alternar o modo claro -->
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var loginButton = document.getElementById('loginButton');
+
+    loginButton.addEventListener('click', function() {
+        // Chamando a função de validação
+        if (validateForm()) {
+            // Redirecionando apenas se a validação for bem-sucedida
+            window.location.href = '../html/pesquisa.html';
+        }
+    });
+});
+
+function validateForm() {
+    var email = document.getElementById('email').value;
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var emailError = document.getElementById('emailError');
+    var usernameError = document.getElementById('usernameError');
+    var passwordError = document.getElementById('passwordError');
+    var isValid = true;
+
+    // Validar o campo de email
+    if (!email || email.trim() === '') {
+        emailError.innerText = 'O campo de email é obrigatório.';
+        isValid = false;
+    } else {
+        emailError.innerText = '';
+    }
+
+    // Validar o campo de nome de usuário
+    if (!username || username.trim() === '') {
+        usernameError.innerText = 'O campo de nome de usuário é obrigatório.';
+        isValid = false;
+    } else {
+        usernameError.innerText = '';
+    }
+
+    // Validar o campo de senha
+    if (!password || password.trim() === '') {
+        passwordError.innerText = 'O campo de senha é obrigatório.';
+        isValid = false;
+    } else {
+        passwordError.innerText = '';
+    }
+
+    return isValid;
+}
+</script>
+<script src="../js/login.js"></script>
+
+</body>
+</html>

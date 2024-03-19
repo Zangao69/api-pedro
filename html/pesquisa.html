@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Uso de API</title>
+    <link rel="icon" href="../img/pngwing.com.png">
+    <link rel="stylesheet" href="../css/pesquisa.css"> <!-- Vincula o arquivo CSS externo -->
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="/book">Livros</a></li>
+            <li><a href="/movie">Filmes</a></li>
+            <li><a href="/character">Personagens</a></li>
+            
+            <li>
+                <select name="select" id="select">
+                    <option value="/book">Livros</option>
+                    <option value="/movie">Filmes</option>
+                    <option value="/character">Personagens</option>
+                    
+                </select>
+            </li>
+            <li>
+                <input type="text" id="searchInput" placeholder="Pesquisar...">
+                <button onclick="pesquisar()">🔍</button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Elemento onde o resultado da API será exibido -->
+    <div class="container">
+    <div id="resultado">
+        <ul id="lista-personagens"></ul>
+    </div>
+    </div>
+
+    <script src="../js/pesquisa.js"></script> <!-- Vincula o arquivo JavaScript -->
+</body>
+</html>
